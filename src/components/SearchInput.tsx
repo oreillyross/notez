@@ -1,5 +1,13 @@
 import React from "react";
 
+
+function sayHello(message:string) {
+  console.log(`Hello, ${message}`);
+  
+}
+
+sayHello('World!')
+
 function SearchInput() {
   return (
     <div className="bg-red-500 mx-auto max-w-4xl p-6">
