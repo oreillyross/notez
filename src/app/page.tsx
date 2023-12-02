@@ -1,4 +1,5 @@
 
+import SearchInput from "components/SearchInput"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -6,8 +7,9 @@ export const metadata: Metadata = {
 }
 export default function Page() {
   return (
-      <div >
-      THis is the TESTING
+      <div className="text-red-600">  
+      This is the TESTING
+      <SearchInput/>
     </div>
   )
 }

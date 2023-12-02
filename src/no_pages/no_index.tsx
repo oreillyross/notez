@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 
 type Note = {
-  id: string;
+  id: string; 
   title: string;
 };
 
@@ -132,4 +132,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+// export default Home;
