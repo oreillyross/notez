@@ -18,8 +18,9 @@ export default function EmailSubscribe() {
           />
           <div className="p-6 md:p-12">
 
-              <h2 className="font-serif text-xl font-medium text-center text-white md:text-left">Make me some good notes!</h2>
           </div>
+          <h2 className="font-serif text-xl font-medium text-center 
+            text-white md:text-left">Make me some good notes!</h2>
           {/* content */}
         </div>
       </div>
