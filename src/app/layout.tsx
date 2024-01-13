@@ -1,5 +1,5 @@
 import "styles/globals.css"
-import {Roboto} from "next/font/google"
+import {inter} from "app/ui/fonts"
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialisaed`}>{children}</body>
     </html>
   );
 }

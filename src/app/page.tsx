@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 }
 export default function Page() {
   return (
-      <div className="bg-green-800 max-w-2xl min-h-full">
-      Some text to see this appear
+      <div className="pl-24 pt-12 min-h-full">
+      <SearchInput/>
     </div>
   )
 }
