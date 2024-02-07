@@ -1,15 +1,23 @@
 
-import SearchInput from "components/SearchInput"
-import { Metadata } from "next"
+
+import SearchInput from "components/SearchInput";
+import type { Metadata } from "next";
+import { getServerSession } from "next-auth";
 
 export const metadata: Metadata = {
-  title: "Notez"
-}
-export default function Page() {
-  return (
-      <div className="pl-24 pt-12 min-h-full">
-      <SearchInput/>
-    </div>
-  )
-}
+  title: "Notez",
+};
+export default async function Page() {
+  const session = await getServerSession();
 
+  return (
+    <div className="min-h-full pl-24 pt-12">
+      {session?.user?.name ? (
+        <div>{session?.user?.name}</div>
+      ) : (
+        <div>Not Logged in</div>
+      )}
+      <SearchInput />
+    </div>
+  );
+}
